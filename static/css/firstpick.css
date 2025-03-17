@@ -1,0 +1,145 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 30% 15%, rgba(255, 255, 255, 0.54) 10%, rgba(27, 27, 27, 0.9) 80%);
+    z-index: 0;
+    pointer-events: none;
+}
+.back-icon {
+    position: fixed;
+    top: 25px;
+    left: 18px;
+    font-size: 2rem;
+    color: rgb(191, 199, 216);
+    text-decoration: none;
+    z-index: 20;
+    transition: color 0.3s ease;
+}
+
+.back-icon:hover {
+    color: rgb(129, 119, 119);
+}
+
+.home-icon {
+    position: fixed;
+    top: 20px;
+    right: 18px;
+    font-size: 2rem;
+    color: rgb(191, 199, 216);
+    text-decoration: none;
+    z-index: 20;
+    transition: color 0.3s ease;
+}
+
+.home-icon:hover {
+    color: rgb(129, 119, 119);
+}
+
+.header-box {
+    background-color: rgb(44, 30, 30);
+    color: rgb(191, 199, 216);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 0 10px;
+}
+
+.header-box h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.main-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+    margin-top: 10vh;
+    z-index: 2; 
+}
+
+.box-firstpick {
+    width: auto;
+    max-width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8%;
+    flex-shrink: 0;
+    z-index: 3;
+}
+
+.box-firstpick img {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 10px 8px rgba(0,0,0,0.4);
+    border-left: 15px solid rgb(44, 30, 30);
+    border-right: 15px solid rgb(44, 30, 30);
+    border-top: 40px solid rgb(44, 30, 30);
+    border-bottom: 40px solid rgb(44, 30, 30);
+}
+
+.text-box {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 100px;
+    margin-top: 100px;
+    z-index: 3;
+    color: white;
+}
+
+.huge-text {
+    font-size: 3.5rem;  
+    font-weight: bold;
+    color: rgb(191, 199, 216);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.medium-text {
+    font-size: 1.15rem;  
+    font-weight: normal;
+    color: rgb(180, 187, 203);
+    margin-top: 10px;
+}
+
+.small-text {
+    font-size: 0.8rem;  
+    color: rgb(179, 186, 203);
+}

@@ -1,0 +1,155 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6f7171;
+    background-image: linear-gradient(to bottom, rgba(44, 30, 30, 0.19) 80%, rgba(22, 13, 13, 0.65) 170%);
+    display: flex;
+    min-height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header-box {
+    background-color: rgb(44, 30, 30);
+    color: rgb(191, 199, 216);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 0 10px;
+}
+
+.header-box h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+.back-icon {
+    position: fixed;
+    top: 25px;
+    left: 18px;
+    font-size: 2rem;
+    color: rgb(191, 199, 216);
+    text-decoration: none;
+    z-index: 20;
+    transition: color 0.3s ease;
+}
+
+.back-icon:hover {
+    color: rgb(129, 119, 119);
+}
+
+.home-icon {
+    position: fixed;
+    top: 20px;
+    right: 18px;
+    font-size: 2rem;
+    color: rgb(191, 199, 216);
+    text-decoration: none;
+    z-index: 20;
+    transition: color 0.3s ease;
+}
+
+.home-icon:hover {
+    color: rgb(129, 119, 119);
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 50px 50px;
+}
+
+.left-box, .right-box {
+    background-color: rgb(44, 30, 30);
+    color: #e1dddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-box {
+    width: 47%;
+    height: 30%;
+    margin-right: 20px;
+}
+
+.right-box {
+    width: 40%;
+}
+
+.left-box h2 {
+    margin-top: 0;
+    color: rgb(191, 199, 216);
+}
+
+.left-box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.left-box li {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.right-box .contact-message {
+    margin-bottom: 20px;
+}
+
+.right-box .contact-message h3 {
+    font-size: 1.5rem;
+    color: rgb(191, 199, 216);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    padding: 9px;
+    font-size: 1rem;
+    color: rgb(124, 108, 108);
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #1e1515;
+    border-radius: 5px;
+    background-color: #a9a5a5; /* Grey background */
+}
+
+form button {
+    padding: 10px;
+    margin-top: 18px;
+    font-size: 1.2rem;
+    background-color: rgb(81, 66, 66);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(65, 58, 58);;
+}
+
+

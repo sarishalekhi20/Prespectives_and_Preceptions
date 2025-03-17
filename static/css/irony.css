@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6f7171;
+    display: flex;
+    justify-content: center;  /* Center the main content horizontally */
+    align-items: flex-start;  /* Align the main content to the top of the page */
+    height: 100vh;  /* Full viewport height */
+    flex-direction: column;  /* Stack the header and content vertically */
+    text-align: center; 
+}
+
+.home-icon {
+    position: fixed;
+    top: 20px;
+    right: 18px;
+    font-size: 2rem;
+    color: rgb(191, 199, 216);
+    text-decoration: none;
+    z-index: 20;
+    transition: color 0.3s ease;
+}
+
+.home-icon:hover {
+    color: rgb(129, 119, 119);
+}
+
+.header-box {
+    background-color: rgb(44, 30, 30);
+    color: rgb(191, 199, 216);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 0 10px;
+}
+
+.header-box h1 {
+    margin: 0;  /* Remove default margin */
+    font-size: 2.5rem;  /* Adjust the font size as needed */
+}
+
+.main-content {
+    display: flex;  /* Arrange image and text side by side */
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;  /* Take up 80% of the page width */
+    margin-top: 10vh;  /* Adjust for better space above */
+}
+
+.box-firstpick {
+    width: auto;
+    max-width: 55%;  /* Allow image container to take up 45% of the space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8%;  /* Move image more to the left */
+    flex-shrink: 0;
+}
+
+.box-firstpick img {
+    width: 100%;  /* Make image responsive */
+    max-width: 90%;  /* Limit image size */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 5px;  /* Optional rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Optional shadow */
+    border-left: 15px solid rgb(44, 30, 30);
+    border-right: 15px solid rgb(44, 30, 30);
+    border-top: 40px solid rgb(44, 30, 30);
+    border-bottom: 40px solid rgb(44, 30, 30);
+}
+
+.text-box {
+    text-align: left;
+    display: flex;
+    flex-direction: column;  /* Stack the text vertically */
+    justify-content: flex-start;  /* Remove space between text elements */
+    align-items: flex-start;
+    margin-top: 100px;  /* Lower the text a bit */
+    margin-left: 100px;
+}
+
+.huge-text {
+    font-size: 3.5rem;  
+    font-weight: bold;
+    color: rgb(191, 199, 216);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.medium-text {
+    font-size: 1.15rem;  
+    font-weight: normal;
+    color: rgb(180, 187, 203);
+    margin-top: 10px;
+}
+
+.small-text {
+    font-size: 0.8rem;  
+    color: rgb(179, 186, 203);
+}

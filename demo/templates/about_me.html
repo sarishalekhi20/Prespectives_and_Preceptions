@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about me</title>
+    <link rel="stylesheet" href="{% static 'css/about_me.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <a href="{% url 'home' %}" class="back-icon">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+    <a href="{% url 'home' %}" class="home-icon">
+        <i class="fas fa-home"></i>
+    </a>
+    
+    <div class="header-box">
+        <h1>ABOUT ME</h1>
+    </div>
+
+    <div class="about-container">
+        <div class="profile-image">
+            <img src="{% static 'css/images/about_me.jpeg' %}" alt="Sarisha Lekhi">
+        </div>
+        <div class="about-text">
+            <h2>Hello, I am <span class="name">Sarisha Lekhi</span></h2>
+            <p class="artist-statement">
+                For me, art is a vital means of maintaining my sanity in an increasingly fast-paced world, be it creating or experiencing art. 
+                My paintings are deeply personal, often inspired by my own experiences and observations of human behavior, emotions, and conflicts. 
+                I like to incorporate symbolism in every aspect of my work, from the background colors to the smallest details. 
+                I often draw inspiration from Fauvism, using bold colors and simple forms to evoke raw emotion. 
+                Acrylics are my primary medium, allowing me to build layers and different textures.
+            </p>
+            <p class="artist-statement">
+                Art has always been a part of my life, but due to certain circumstances, I could never pursue a formal art degree. Instead, I studied engineering. 
+                My goal is for viewers to feel something profound when they engage with my work rather than admiring it solely for its aesthetics. 
+                As Marcel Duchamp said, “Creativity is not performed by the artist alone, the spectator brings the work in contact with the external world, 
+                by deciphering and interpreting its inner qualifications, thus adding his contribution to the creative act.” 
+                Through my art, I would like to invite others to find their own meaning and connection and to feel a stream of emotions.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- blogs, journey as a map , images  -->

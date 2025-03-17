@@ -1,0 +1,129 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6f7171;
+    display: flex;
+    min-height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header-box {
+    background-color: rgb(44, 30, 30);
+    color: rgb(191, 199, 216);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 0 10px;
+}
+
+.header-box h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+body::before, body::after {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    left: 0;
+    z-index: -1;
+}
+
+body::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(35, 3, 3, 0.8) 22%, rgba(19, 15, 15, 0.5) 50%);
+    filter: sepia(0.7) blur(35px);
+}
+.back-icon {
+    position: fixed;
+    top: 25px;
+    left: 18px;
+    font-size: 2rem;
+    color: rgb(191, 199, 216);
+    text-decoration: none;
+    z-index: 20;
+    transition: color 0.3s ease;
+}
+
+.back-icon:hover {
+    color: rgb(129, 119, 119);
+}
+
+.home-icon {
+    position: fixed;
+    top: 20px;
+    right: 18px;
+    font-size: 2rem;
+    color: rgb(191, 199, 216);
+    text-decoration: none;
+    z-index: 20;
+    transition: color 0.3s ease;
+}
+
+.home-icon:hover {
+    color: rgb(129, 119, 119);
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 50px 50px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.profile-image {
+    flex: 1;
+    margin-right: 20px;
+    position: relative;
+    left: 40px;
+}
+
+.profile-image img {
+    border: 6px solid #301919;
+    margin-top: 11%;
+    width: 77%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    flex: 2;
+    max-width: 60%;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color:rgb(211, 217, 232);
+}
+
+.about-text .name {
+    font-size: 4.5rem;
+    color: rgb(44, 30, 30);; /* Gold color for name */
+}
+
+.about-text .artist-statement {
+    font-size: 1rem;
+    line-height: 1.6;
+    color:rgb(211, 217, 232);
+    margin-top: 20px;
+}

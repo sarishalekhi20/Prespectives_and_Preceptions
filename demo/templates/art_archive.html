@@ -1,0 +1,97 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Archive</title>
+    <link rel="stylesheet" href="{% static 'css/art_archive.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>    
+    <a href="{% url 'home' %}" class="back-icon">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+    
+    <a href="{% url 'home' %}" class="home-icon">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <div class="header-box">
+        <h1>ART ARCHIVE🪦🔬</h1>
+    </div>
+
+    <div class="container">
+        <div class="firstpick">
+            <a href="{% url 'firstpick' %}" target="_blank">
+                <img src="{% static 'css/images/firstpick.jpg' %}" alt="Art Image">
+            </a>
+        </div>
+        <div class="ivrpov">
+            <a href="{% url 'ivrpov' %}" target="_blank">
+                <img src="{% static 'css/images/ivrpov.jpg' %}" alt="Art Image">
+            </a>
+        </div>
+        <div class="comfortably_numb">
+            <a href="{% url 'comfortably_numb' %}" target="_blank">
+                <img src="{% static 'css/images/comfortably_numb.jpg' %}" alt="Art Image">
+            </a>
+        </div>
+        <div class="bemyangel">
+            <a href="{% url 'bemyangel' %}" target="_blank">
+                <img src="{% static 'css/images/bemyangel.jpg' %}" alt="Art Image">
+            </a>
+        </div>
+        <div class="brown_dreams">
+            <a href="{% url 'brown_dreams' %}" target="_blank">
+                <img src="{% static 'css/images/brown_dreams.jpeg' %}" alt="Art Image">
+            </a>
+        </div>
+        <div class="impressionism">
+            <a href="{% url 'impressionism' %}" target="_blank">
+                <img src="{% static 'css/images/impressionism.jpg' %}" alt="Art Image">
+            </a>
+        </div>
+        <div class="realism">
+            <a href="{% url 'realism' %}" target="_blank">
+                <img src="{% static 'css/images/realism1.jpeg' %}" alt="Art Image">
+            </a>
+        </div>
+        <div class="SIEVM">
+            <a href="{% url 'SIEVM' %}" target="_blank">
+                <img src="{% static 'css/images/SIEVM.jpg' %}" alt="Art Image">
+            </a>
+        </div>
+        <div class="irony">
+            <a href="{% url 'irony' %}" target="_blank">
+                <img src="{% static 'css/images/irony.jpeg' %}" alt="Art Image">
+            </a>
+        </div>
+        <div class="me?">
+            <a href="{% url 'me?' %}" target="_blank">
+                <img src="{% static 'css/images/me?.jpg' %}" alt="Art Image">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".container img");
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("loaded");
+                        }
+                    });
+                },
+                { threshold: 0.2 }
+            );
+
+            images.forEach((img) => observer.observe(img));
+        });
+    </script>
+</body>
+</html>

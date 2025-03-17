@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prespectives_prespectives</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="fixed-links">
+        <a href="{% url 'art_archive' %}">My Art Archive</a>
+        <a href="{% url 'download' %}" class="btn-download">Portfolio (PDF)</a>
+        <a href="{% url 'about_me'%}">About Me</a>
+        <a href="{% url 'contact'%}">Contact Information</a>
+    </div>
+    <div class="container">
+        <div class="background">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Perspectives and Perceptions</h1>
+                <p class="small-text">A Fine Arts Portfolio</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

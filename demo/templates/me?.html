@@ -1,0 +1,37 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstPick</title>
+    <link rel="stylesheet" href="{% static 'css/firstpick.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+ <a href="{% url 'home' %}" class="home-icon">
+        <i class="fas fa-home"></i>
+</a>
+<div class="header-box">
+        <h1>F(A)/IRSTPICK</h1>
+ </div>
+
+ <div class="main-content">
+    <!-- Image on the left -->
+    <div class="box-firstpick">
+            <img src="{% static 'css/images/firstpick.jpg' %}" alt="Art Image">       
+    </div>
+
+    <!-- Text content on the right -->
+    <div class="text-box">
+        <div class="huge-text">F(A)/(IR)STPICK</div><br>
+        <div class="medium-text">medium- acryllic<br>size-8x8 inches<br>year-2022</div><br>
+        <div class="small-text">This painting depicts a state of constant confusion between living a normal already laid comfortable path or live life unconventionally, for the graphics I have taken inspiration from a lot of movies that deal with a similar idea.</div>
+    </div>
+</div>
+</body>
+</body>
+</html>
+
